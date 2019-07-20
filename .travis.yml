@@ -14,4 +14,3 @@ jobs:
         - pip install flake8 isort
       script:
         - flake8 .
-        - isort --check-only
