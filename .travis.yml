@@ -1,0 +1,17 @@
+stages:
+  - lint
+
+
+jobs:
+  include:
+    - stage: lint
+      dist: xenial   # required for Python >= 3.7
+      language: python
+      python:
+        - "3.7"
+        - "3.7-dev"
+      install:
+        - pip install flake8 isort
+      script:
+        - flake8 .
+        - isort --check-only
