@@ -3,10 +3,9 @@ import re
 
 import aiohttp
 from aiohttp import web
-from aiojobs.aiohttp import setup, spawn
-
 from settings import VK_ACCESS_TOKEN, GIPHY_ACCESS_TOKEN, VK_CONFIRMATION_CODE
 from services.giphy import Giphy
+from aiojobs.aiohttp import setup, spawn
 from services.vk_api import VkApi
 
 vk_api = VkApi(api_token=VK_ACCESS_TOKEN, version='5.101')
