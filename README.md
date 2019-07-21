@@ -12,4 +12,4 @@ Create a group and enable api integration in group settings. Create api_key and 
 
 # Run in docker
 
-`docker build -t cat-bot . && docker run cat-bot`
+`docker build -t cat-bot . && docker run cat-bot -p 80:8000`
